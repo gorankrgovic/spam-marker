@@ -1,0 +1,46 @@
+# URL blacklist
+# Any regular expression syntax can be used here
+# 	(without the delimiters)
+# All keywords are case insensitive.
+# Lines starting with '#' are ignored.
+
+theychanel\.com
+everychanel\.com
+get-massive-autopilot-traffic\.com
+skyrocket-seo-traffic\.com
+free-casino-bonus\.com
+womensclothescheap\.com
+familiekock\.nl
+kreatorzyimprezek\.pl
+livingwithrheumatoidarthritis\.org
+commentjob\.ru
+eekshop\.com
+icamtech\.com
+isglasses\.com
+firefallstore\.com
+gmbal\.com
+mortalpath\.com
+newfathersfoundation\.com
+2hams\.com
+accessfree\.info
+aircool\.fr
+bath-confetti\.com
+robotfinance\.fr
+fightingfatforfit
+coldfilm\.ru
+# Dating sites
+loveepicentre\.com
+onlinecupid\.info
+plentyoffish\.info
+okdating\.info
+funonlinedating\.info
+oksingles\.info
+pollydirectory\.info
+lovehomego\.com
+escorts\.com # Usually ends with this
+studio-gong\.si
+# Any URL that contains these words is evil!
+louisvuitton
+paydayloan
+monclerpascher
+

@@ -1,0 +1,19 @@
+{
+  "name": "gorankrgovic/spam-marker",
+  "description": "An extensible, simple yet powerful spam filter library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Goran Krgovic",
+      "email": "goran@dashlocal.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SpamMarker\\": ["src/", "tests/"]
+    }
+  },
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
