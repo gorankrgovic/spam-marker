@@ -33,25 +33,32 @@ class BlackListedTest extends \PHPUnit_Framework_TestCase
     public function testSpamFreeString()
     {
         $data = array('text' => 'This is a very clean text with no blacklisted data.');
-        $this->assertFalse($this->blackList->filter($data));
+        $return = $this->blackList->filter($data);
+        $this->assertFalse($return['founded']);
     }
 
 
     public function testSimpleBlacklistedString()
     {
         $data = array('text' => 'this is a string with example.com and should fail.');
-        $this->assertTrue($this->blackList->filter($data));
+        $return = $this->blackList->filter($data);
+
+        $this->assertTrue($return['founded']);
         $data = array('text' => 'this is a string with 127.0.0.1 and should fail.');
-        $this->assertTrue($this->blackList->filter($data));
+
+        $return = $this->blackList->filter($data);
+        $this->assertTrue($return['founded']);
     }
 
 
     public function testRegexPatternBlacklistedString()
     {
         $data = array('text' => 'this is a string with somedump.com should fail spam check');
-        $this->assertTrue($this->blackList->filter($data));
+        $return = $this->blackList->filter($data);
+        $this->assertTrue($return['founded']);
         $data = array('text' => 'this is a string with sitedump.net should fail spam check');
-        $this->assertTrue($this->blackList->filter($data));
+        $return = $this->blackList->filter($data);
+        $this->assertTrue($return['founded']);
     }
 
     public function tearDown()
